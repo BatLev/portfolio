@@ -1,74 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom';
-import { Icon } from '@iconify/react'
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
 
-  const [navbar, setnavbar] = useState(false)
-
   return (
     <div className="App">
-      <nav className='navbar'>
-        <div className='navbar-base'>
-          <div className='navbar-links'>
-            <Link className='nav-link' to="#"><Icon className="icon" icon="codicon:home"></Icon></Link>
-            <Link className='nav-link' to="#"><div className='title'>Main</div></Link>
-          </div>
-          <div className='navbar-links'>
-            <Link className='nav-link' to="#"><Icon className="icon" icon="ant-design:phone-twotone"></Icon></Link>
-            <Link className='nav-link' to="#"><div className='title'>Contact</div></Link>
-
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="fa:github"></Icon></Link>
-            <Link className='nav-link' to='#'><div className='title'>Projects</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => setnavbar(!navbar)}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="carbon:settings"></Icon></Link>
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-        </div>
-        <div className={navbar ? "navbar-settings  open" : "navbar-settings"}>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
-            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
-            {/* <p className='nav-link'>A</p> */}
-            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar/>
       <div className='content'>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.

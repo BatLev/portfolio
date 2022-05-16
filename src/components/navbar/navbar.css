@@ -1,0 +1,121 @@
+.App {
+    padding-top: 1.5rem;
+  }
+
+.navbar {
+    background-color: rgb(82, 41, 148);
+    position: fixed;
+    top: -2.5rem;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 0.4rem;
+    min-width: clamp(15rem, 50%, 30rem);
+    min-height: 2rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: shiftup 0.4s ease-in forwards;
+    box-shadow: 2px 2px 4px 1px rgb(18, 18, 18);
+    transition: top 0.3s;
+  }
+  
+  .navbar:hover {
+    top: 0.1rem;
+  }
+  
+  .navbar-base {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+    min-height: 2rem;
+  }
+  
+  .navbar-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-link {
+    font-size: 0.75rem;
+    text-decoration: none;
+  }
+  
+  .navbar-links .icon {
+    font-size: 2rem;
+  }
+  
+  .navbar-settings {
+    max-height: 0px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: max-height 0.50s ease-in-out, padding-top 0.3s ease-in-out;
+  }
+  
+  .navbar-settings.open {
+    max-height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .navbar-settings .navbar-links {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .navbar-settings * {
+    max-height: 0px;
+    transition: max-height 0.50s ease-in-out;
+  }
+  
+  .navbar-settings.open * {
+    max-height: 400px;
+  }
+  
+  .navbar-settings .nav-link * {
+    display: flex;
+    flex: 1;
+    opacity: 0;
+    transition: max-height 0.50s ease-in-out, padding-top 0.3s ease-in-out, opacity 0.3s ease-in-out 0.2s;
+  }
+  
+  .navbar-settings.open .nav-link * {
+    display: flex;
+    flex: 1;
+    opacity: 1;
+  }
+  
+  .navbar-settings.open {
+    padding-top: 1rem;
+  }
+  
+  .navbar-settings .title {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .App {
+      background-color: blueviolet;
+    }
+  }
+  
+  
+  @keyframes shiftup {
+    0% {
+      margin-top: 2.5rem;
+    }
+  
+    100% {
+      margin-top: 0;
+    }
+  }
