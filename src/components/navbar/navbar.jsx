@@ -1,8 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,Icon } from 'react'
 import { Link } from 'react-router-dom';
-import { Icon } from '@iconify/react'
-import './navbar.css';
+import '../navbar/navbar.css';
 
 const Navbar = () => {
 
