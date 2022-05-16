@@ -1,3 +1,6 @@
+:root{
+  font-size: calc( 0.6rem + 0.6vw );
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,12 +14,14 @@
   background-color: rgba(0, 0, 0, 0.2);
   color: aliceblue;
 }
-.content {
-  padding-top: 1.5rem;
-}
 .App a:visited {
   color: aliceblue;
 }
+
+.App{
+  padding-top: 1.5rem;
+}
+
 .navbar {
   background-color: rgb(82, 41, 148);
   position: fixed;
@@ -111,6 +116,7 @@
   border-radius: 2px;
   background-color: rgba(82, 41, 148, 0.8);
 }
+
 @keyframes shiftup {
   0% {
     margin-top: 2.5rem;
