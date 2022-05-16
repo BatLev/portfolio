@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
 :root {
-  font-size: calc(0.6rem + 0.6vw);
+  font-size: calc(0.5rem + 0.7vw);
 }
 
 * {
@@ -7,6 +9,7 @@
   padding: 0;
   margin: 0;
   /* border: 1px solid white; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .App {
@@ -14,7 +17,7 @@
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   color: aliceblue;
 }
 
@@ -34,4 +37,24 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: rgba(82, 41, 148, 0.8);
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.content .paragraph{
+  text-align: justify;
+  width: 100%;
+  min-width: 45ch;
+  max-width: 70ch;
+  padding: 1rem;
+  line-height: 1.5;
+
 }
