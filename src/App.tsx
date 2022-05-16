@@ -26,13 +26,47 @@ function App() {
             <Link className='nav-link' to='#'><Icon className="icon" icon="fa:github"></Icon></Link>
             <Link className='nav-link' to='#'><div className='title'>Projects</div></Link>
           </div>
-          <div className='navbar-links' onClick={() => console.log("clicked")}>
+          <div className='navbar-links' onClick={() => setnavbar(!navbar)}>
             <Link className='nav-link' to='#'><Icon className="icon" icon="carbon:settings"></Icon></Link>
             <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
           </div>
         </div>
-        <div className='navbar-settings'>
-          
+        <div className={navbar ? "navbar-settings  open" : "navbar-settings"}>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
+          <div className='navbar-links' onClick={() => console.log("clicked")}>
+            <Link className='nav-link' to='#'><Icon className="icon" icon="akar-icons:settings-horizontal"></Icon></Link>
+            {/* <p className='nav-link'>A</p> */}
+            <Link className='nav-link' to='#'><div className='title'>Settings</div></Link>
+          </div>
         </div>
       </nav>
       <div className='content'>
