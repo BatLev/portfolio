@@ -1,10 +1,5 @@
-<<<<<<< HEAD:src/components/navbar/navbar.jsx
-import React from 'react'
-import { useState,Icon } from 'react'
-=======
-import React, { FC } from 'react'
-import { useState } from 'react'
->>>>>>> 57566f8b345137cad0bd68fe231cc65e44c4adaf:src/components/navbar/navbar.tsx
+import { FC, useState } from 'react';
+import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 import '../navbar/navbar.css';
 
