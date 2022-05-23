@@ -8,43 +8,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <main className='content'>
-        <p className='paragraph'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus illo quos mollitia veniam natus ipsam ex nostrum voluptas id consequatur, nobis cupiditate debitis autem corporis, perferendis dolore, doloribus inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae similique minus veniam beatae ad quam alias, molestias, eligendi, incidunt deserunt sapiente nostrum. Nostrum vitae commodi blanditiis veniam laborum possimus!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore beatae. Rerum laborum doloribus eos, omnis, mollitia harum impedit accusantium atque inventore ut a iure voluptates cupiditate enim! Autem, deserunt?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque dolores perspiciatis officiis mollitia labore eveniet, quia voluptatibus culpa cupiditate optio eius, blanditiis iusto, quidem corrupti adipisci voluptate placeat a?
-        </p>
-        <p className='paragraph'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus illo quos mollitia veniam natus ipsam ex nostrum voluptas id consequatur, nobis cupiditate debitis autem corporis, perferendis dolore, doloribus inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae similique minus veniam beatae ad quam alias, molestias, eligendi, incidunt deserunt sapiente nostrum. Nostrum vitae commodi blanditiis veniam laborum possimus!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore beatae. Rerum laborum doloribus eos, omnis, mollitia harum impedit accusantium atque inventore ut a iure voluptates cupiditate enim! Autem, deserunt?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque dolores perspiciatis officiis mollitia labore eveniet, quia voluptatibus culpa cupiditate optio eius, blanditiis iusto, quidem corrupti adipisci voluptate placeat a?
-        </p>
-        <p className='paragraph'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus illo quos mollitia veniam natus ipsam ex nostrum voluptas id consequatur, nobis cupiditate debitis autem corporis, perferendis dolore, doloribus inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae similique minus veniam beatae ad quam alias, molestias, eligendi, incidunt deserunt sapiente nostrum. Nostrum vitae commodi blanditiis veniam laborum possimus!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore beatae. Rerum laborum doloribus eos, omnis, mollitia harum impedit accusantium atque inventore ut a iure voluptates cupiditate enim! Autem, deserunt?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque dolores perspiciatis officiis mollitia labore eveniet, quia voluptatibus culpa cupiditate optio eius, blanditiis iusto, quidem corrupti adipisci voluptate placeat a?
-        </p>
-        <p className='paragraph'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus illo quos mollitia veniam natus ipsam ex nostrum voluptas id consequatur, nobis cupiditate debitis autem corporis, perferendis dolore, doloribus inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae similique minus veniam beatae ad quam alias, molestias, eligendi, incidunt deserunt sapiente nostrum. Nostrum vitae commodi blanditiis veniam laborum possimus!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore beatae. Rerum laborum doloribus eos, omnis, mollitia harum impedit accusantium atque inventore ut a iure voluptates cupiditate enim! Autem, deserunt?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque dolores perspiciatis officiis mollitia labore eveniet, quia voluptatibus culpa cupiditate optio eius, blanditiis iusto, quidem corrupti adipisci voluptate placeat a?
-        </p>
-        <p className='paragraph'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ab a accusamus corrupti enim modi quasi repudiandae? Doloribus suscipit quasi assumenda odit vitae impedit amet aliquam sunt adipisci facere.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus illo quos mollitia veniam natus ipsam ex nostrum voluptas id consequatur, nobis cupiditate debitis autem corporis, perferendis dolore, doloribus inventore?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae similique minus veniam beatae ad quam alias, molestias, eligendi, incidunt deserunt sapiente nostrum. Nostrum vitae commodi blanditiis veniam laborum possimus!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore beatae. Rerum laborum doloribus eos, omnis, mollitia harum impedit accusantium atque inventore ut a iure voluptates cupiditate enim! Autem, deserunt?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque dolores perspiciatis officiis mollitia labore eveniet, quia voluptatibus culpa cupiditate optio eius, blanditiis iusto, quidem corrupti adipisci voluptate placeat a?
-        </p>
+        <div className='about'>
+          <h1>Welcome!</h1>
+          <p>
+            I am Levente Batóg and this is my personal page. Currently there isn't much to see but feel free to look around.
+          </p>
+        </div>
+        <img src='https://rune.ai/images/RuneLogoPurpleHD.png' />
+        <img style={{ top: '40rem', right: 'auto', left: '-25rem' }} src='https://rune.ai/images/RuneLogoPurpleHD.png' />
       </main>
     </div>
   );

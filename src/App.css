@@ -19,9 +19,10 @@
   background-position: center;
   background-color: rgba(0, 0, 0, 0.7);
   color: aliceblue;
+  
 }
 
-.App a:visited {
+.App a:visited,.App a{
   color: aliceblue;
 }
 
@@ -43,13 +44,46 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:flex-start;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
+  min-height: calc(100vh - 1.5rem);
+  padding-top: 1.5rem;
+}
+
+.content .about{
+  text-align: justify;
+  width: 100%;
+  min-width: 45ch;
+  max-width: 70ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.about h1{
+  text-align: center;
 
 }
 
-.content .paragraph{
+
+.content img{
+  position: absolute;
+  top: 3rem;
+  right: -25rem;
+  width: 45ch;
+}
+
+*{
+  overflow: hidden;
+}
+
+@media screen and (max-width: 580px){
+  .content img{
+    display: none;
+  }
+}
+
+/* .content .paragraph{
   text-align: justify;
   width: 100%;
   min-width: 45ch;
@@ -58,3 +92,10 @@
   line-height: 1.5;
 
 }
+
+.image{
+  max-width: 30ch;
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+} */

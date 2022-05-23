@@ -1,0 +1,16 @@
+.projectlist .icon{
+    font-size: 10rem;
+    border: 0.5rem white solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.projectlist{
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

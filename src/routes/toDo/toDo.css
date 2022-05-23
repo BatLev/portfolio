@@ -1,0 +1,55 @@
+.ticket{
+    border: 0.2rem solid white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    width: clamp(15rem, 50%, 40rem);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ticket{
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+.ticket .icon{
+    font-size: 2.5rem;
+}
+
+.ticket input{
+    background-color: rgba(248, 248, 248, 0.288);
+    width: calc(100% - 3rem);
+    border-radius: 1.5rem;
+}
+
+.ticket:hover{
+    transform: scale(101%);
+}
+
+.textbox{
+    display: none;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.ticket:last-child > .textbox{
+    display: flex;
+    padding-left: 1rem;
+}
+
+.ticket:last-child > .task{
+    display: none;
+}
+
+.ticket .task{
+    width: 100%;
+    text-align: center;
+    transform: translatey(25%);
+}
