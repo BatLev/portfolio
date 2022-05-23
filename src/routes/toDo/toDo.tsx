@@ -1,4 +1,4 @@
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/navbar/navbar";
 import '../../App.css';
 import './toDo.css';
 import { Icon } from '@iconify/react'
