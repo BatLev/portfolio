@@ -15,8 +15,6 @@ export default function Projects() {
                         <a href="https://github.com/BatLev/"><Icon className="icon" icon="akar-icons:github-outline-fill"></Icon></a>
                         <Link className='nav-link' to="/toDo"><Icon className="icon" icon="bx:list-check"></Icon></Link>
                         <Link className='nav-link' to="/invaders"><Icon className="icon" icon="mdi:space-invaders"></Icon></Link>
-                        <img  alt="decor" src='https://rune.ai/images/RuneLogoPurpleHD.png' />
-                        <img alt="decor" style={{ top: '40rem', right: 'auto', left: '-25rem' }} src='https://rune.ai/images/RuneLogoPurpleHD.png' />
                     </main>
                 </div>
             </main>

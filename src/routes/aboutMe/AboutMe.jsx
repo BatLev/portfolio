@@ -9,8 +9,6 @@ export default function aboutMe() {
             <main className='content'>
                 <div className="about">
                     <h1>About me</h1>
-                    <img src='https://rune.ai/images/RuneLogoPurpleHD.png' />
-                    <img style={{ top: '40rem', right: 'auto', left: '-25rem' }} src='https://rune.ai/images/RuneLogoPurpleHD.png' />
                 </div>
             </main>
         </div>

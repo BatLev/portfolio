@@ -13,8 +13,6 @@ function App() {
             I am Levente Batóg and this is my personal page. Currently there isn't much to see but feel free to look around.
           </p>
         </div>
-        <img src='https://rune.ai/images/RuneLogoPurpleHD.png' alt='decor'/>
-        <img alt='decor' style={{ top: '40rem', right: 'auto', left: '-25rem' }} src='https://rune.ai/images/RuneLogoPurpleHD.png' />
       </main>
     </div>
   );
