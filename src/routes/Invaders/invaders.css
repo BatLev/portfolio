@@ -1,0 +1,29 @@
+.space .icon{
+    position: fixed;
+    font-size: 4rem;
+    transform: translateX(-50%);
+    transition: all linear 0.1s;
+}
+
+.space .player{
+    position: fixed;
+    font-size: 4rem;
+    top: 85%;
+}
+
+.space .enemy{
+    top:2rem;
+    font-size: 3rem;
+}
+
+.space .bullet{
+    font-size: 1rem;
+    /* transition: top linear 0.6s; */
+    /* transition: none; */
+    animation: mymove 2s forwards ;
+}
+
+@keyframes mymove {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(4);}
+  }

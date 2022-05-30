@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import AboutMe from './routes/aboutMe/aboutMe';
-import Projects from './routes/proects/projects';
-import ToDo from './routes/toDo/toDo'
+import AboutMe from './routes/aboutMe/AboutMe';
+import Projects from './routes/projects/Projects';
+import ToDo from './routes/toDo/ToDo'
+import Invaders from './routes/Invaders/Invaders'
+import Gameover from './routes/Invaders/Gameover';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +21,8 @@ root.render(
         <Route path="/aboutMe" element={<AboutMe/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/todo" element={<ToDo/>}/>
+        <Route path="/invaders" element={<Invaders/>}/>
+        <Route path="/invaders/gameover" element={<Gameover/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
