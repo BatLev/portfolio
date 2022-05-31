@@ -36,26 +36,17 @@ export function useTouchmanager() {
 
     const [touched, setTouched] = useState(false);
     const [touchposition, setTouchposition] = useState<number>(0);
-    const [resolution, setResolution] = useState<number>(1);
-
-    useEffect(() => {
-        console.log(window.screen.width);
-        console.log(window.screen.height);
-        console.log(window.screen.availHeight);
-        console.log(window.screen.availWidth);
-        setResolution(window.screen.width);
-    }, [touched])
     
 
     const touchStartFunction = useCallback((event: TouchEvent) => {
         setTouched(true);
-        setTouchposition(Math.floor((event.touches[0].screenX/resolution)*100));
-    }, [resolution]);
+        setTouchposition(Math.floor((event.touches[0].pageX/window.screen.availWidth)*100));
+    }, []);
 
     const TouchMoveFunction = useCallback((event: TouchEvent) => {
-        setTouchposition(Math.floor((event.touches[0].screenX/resolution)*100));
+        setTouchposition(Math.floor((event.touches[0].pageX/window.screen.availWidth)*100));
         // console.log((event.touches[0].clientX/resolution))
-    }, [resolution]);
+    }, []);
 
     const TouchEndFunction = useCallback((event: TouchEvent) => {
         setTouched(false)
@@ -82,7 +73,7 @@ export function useTouchmanager() {
         };
     }, [TouchEndFunction]);
 
-    return { touched, touchposition,resolution }
+    return { touched, touchposition }
 }
 
 export function usePlayermanager() {

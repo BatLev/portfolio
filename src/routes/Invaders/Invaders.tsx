@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react'
 import { FC, useCallback, useEffect, useState } from "react";
 import './functions';
 // import { keyboardKey } from "@testing-library/user-event";
-import { usePlayermanager, useEnemiesmanager, useBulletmanager, useInputmanager } from "./functions";
+import { usePlayermanager, useEnemiesmanager, useBulletmanager } from "./functions";
 import Enemy from "./Enemy";
 import Bullet from "./Bullet";
 import { useNavigate } from "react-router-dom";
